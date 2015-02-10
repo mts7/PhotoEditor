@@ -1,0 +1,174 @@
+#main {
+    width: 832px;
+}
+#tool_close {
+    left: 782px;
+    position: absolute;
+    top: 2px;
+}
+#image_area {
+    margin-left: -4px;
+}
+
+#image_area img {
+    max-height: 600px;
+    max-width: 800px;
+}
+
+#image_area {
+    max-width: 800px;
+}
+
+.column, .option-group {
+    display: inline-block;
+}
+.column {
+    max-height: 600px;
+}
+#undo {
+    -ms-transform: rotateY(180deg); /* IE 9 */
+    -webkit-transform: rotateY(180deg); /* Chrome, Safari, Opera */
+    transform: rotateY(180deg);
+}
+#status-bar {
+    background: #dfdfdf;
+    font-size: 10px;
+    width: 826px;
+}
+
+#toolbox {
+    background: none repeat scroll 0 0 #dfdfdf;
+    height: 600px;
+    margin-top: -1px;
+    vertical-align: top;
+    width: 26px;
+}
+
+.tool, .option {
+    padding: 3px 4px;
+}
+
+.tool {
+    border: 1px solid #dfdfdf;
+}
+
+.option {
+    border: 1px solid #ffffff;
+    vertical-align: top;
+}
+
+.tool:hover, .option:hover {
+    background: #EFEFEF;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+#option-bar, #status-bar, #toolbox {
+    border: 1px solid #efefcf;
+}
+#option-bar {
+    height: 44px;
+    position: relative;
+    width: 826px;
+}
+#option-bar .option-group {
+    display: table-cell;
+    height: inherit;
+    vertical-align: bottom;
+}
+/* hide undo history until needed */
+.history-box {
+    background: none repeat scroll 0 0 #efefef;
+    border: 1px solid #000000;
+    display: none;
+    position: absolute;
+    top: 105px;
+}
+#undo_history {
+    left: 24px;
+}
+#redo_history {
+    left: 48px;
+}
+#tool_standard .history-version {
+    cursor: pointer;
+    padding: 4px 11px;
+}
+#tool_standard .history-version:hover {
+    background: #d7d7d7;
+    border: 1px solid #003366;
+    padding: 3px 10px;
+}
+.status-label {
+    color: #006f3d;
+    padding: 0 3px 0 5px;
+}
+.status-area {
+    display: inline-block;
+    padding: 0 5px;
+    vertical-align: top;
+}
+
+#crop_input {
+    border-left: 3px solid #ffffff;
+}
+
+#tool_conclusion {
+    display: none;
+    left: 280px;
+    position: absolute;
+    top: 2px;
+}
+
+.history-layer {
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: -66px;
+    width: 100%;
+    z-index: 200;
+}
+
+#save_message {
+    border-left: 3px solid #ffffff;
+    display: none;
+    padding: 0 5px;
+}
+
+.option-disabled {
+    opacity: .25;
+}
+.option-disabled:hover {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    cursor: default;
+}
+
+#overlay {
+    background: none repeat scroll 0 0 #000000;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.25;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#overlay_content {
+    background: none repeat scroll 0 0 #ffffff;
+    color: #000000;
+    display: none;
+    left: 40%;
+    min-height: 120px;
+    opacity: 1;
+    position: fixed;
+    top: 40%;
+    width: 25%;
+}
+
+#overlay_content p {
+    left: 25%;
+    position: relative;
+    top: 25%;
+}
